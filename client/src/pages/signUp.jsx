@@ -39,7 +39,7 @@ export default function SignUp() {
 
   async function addUser(data){
   
-    const res = await axios.post("http://localhost:3000/api/user", data);
+    const res = await axios.post("https://node-jwt-authentication-rdik.onrender.com/api/user", data);
     console.log(res);
     if(res.data.status === 200){
       navigate("/login")

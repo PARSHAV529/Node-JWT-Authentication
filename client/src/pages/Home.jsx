@@ -17,7 +17,7 @@ export const Home = () => {
       }
     }
     
-      const res= await axios.get("http://localhost:3000/api/user",config)
+      const res= await axios.get("https://node-jwt-authentication-rdik.onrender.com/api/user",config)
       const data=res.data
       setName(data.name)
     
